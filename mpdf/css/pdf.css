@@ -1,0 +1,166 @@
+body {
+	font-size: 10pt;
+	line-height: 1.75;
+}
+
+.d-none,
+.d-print-none {
+	display: none;
+}
+
+.billy-invoice-wrapper .show-on-invoice {
+	display: block;
+}
+.billy-invoice-wrapper .show-on-quote {
+	display: none;
+}
+.billy-quote-wrapper .show-on-invoice {
+	display: none;
+}
+.billy-quote-wrapper .show-on-quote {
+	display: block;
+}
+
+p,
+ul,
+ol {
+	font-size: inherit;
+}
+
+.small {
+	font-size: 7pt;
+}
+
+hr {
+	margin: 5pt 0;
+}
+
+.header {
+	margin-bottom: 40pt;
+}
+.header p {
+	margin: 0;
+}
+.header .wp-block-image {
+	width: 100pt;
+}
+.header .wp-block-columns {
+	display: block;
+	width: 100%;
+}
+.header .wp-block-columns .wp-block-column {
+	display: block;
+	float: left;
+	width: 33%;
+	min-width: 33%;
+	margin: 0;
+	border-bottom: 1px solid #fff;
+}
+
+.footer,
+.footer p {
+	font-size: 7pt;
+}
+.footer .wp-block-columns {
+	width: 100%;
+}
+.footer .wp-block-columns .wp-block-column {
+	float: left;
+	width: 33%;
+	min-width: 33%;
+	margin: 0;
+	border: none;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.align-center,
+.text-center {
+	text-align: center;
+}
+.align-left,
+.text-left {
+	text-align: left;
+}
+.align-right,
+.text-right {
+	text-align: right;
+}
+
+.alignwide {
+	display: block;
+	max-width: none;
+	width: 100%;
+	margin-top: 0;
+}
+
+.details {
+	display: block;
+	width: 100%;
+}
+.details .wp-block-column {
+	display: block;
+	float: left;
+	width: 33%;
+	min-width: 33%;
+	margin: 0;
+	border-bottom: 1px solid #fff;
+}
+.details p {
+	margin: 0;
+}
+
+.metadata .label,
+.metadata .text {
+	display: block;
+	float: left;
+	width: 50%;
+	min-width: 50%;
+	font-size: 7pt;
+}
+.metadata .label {
+	font-weight: bold;
+	hyphens: auto;
+}
+.metadata .text {
+	float: right;
+}
+
+.intro {
+	margin: 20pt 0 0;
+}
+
+.wp-block-table {
+	margin: 20pt 0;
+	width: 100%;
+	border-collapse: collapse;
+}
+.wp-block-table th,
+.wp-block-table td {
+	padding: 5pt 10pt;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+.wp-block-table th {
+	text-align: left;
+	font-weight: bold;
+}
+
+.wp-block-table tbody th,
+.wp-block-table tbody td {
+	vertical-align: top;
+	line-height: 1.75;
+}
+
+.wp-block-table tfoot th,
+.wp-block-table tfoot td {
+	white-space: nowrap;
+}
+.wp-block-table tfoot th {
+	text-align: right;
+}
+.wp-block-table tfoot .total td {
+	font-weight: bold;
+}

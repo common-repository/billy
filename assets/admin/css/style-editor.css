@@ -1,0 +1,311 @@
+/*!
+ * Admin and Editor Styles
+ */
+
+body.block-editor-page[class*="post-type-billy-"] .wp-block-post-content {
+	padding: 24px;
+}
+
+body.block-editor-page[class*="post-type-billy-"] .wp-block-group {
+	margin-block-start: 1.5rem !important;
+}
+
+body.block-editor-page[class*="post-type-billy-"] .d-admin-none {
+	display: none !important;
+}
+body.block-editor-page[class*="post-type-billy-"] .d-admin-block {
+	display: block !important;
+}
+
+body.block-editor-page[class*="post-type-billy-"] [class*="show-on-"] {
+	display: none;
+}
+body.block-editor-page.post-type-billy-invoice .show-on-invoice,
+body.block-editor-page.post-type-billy-quote .show-on-quote,
+body.block-editor-page.post-type-billy-accounting .show-on-accounting {
+	display: block;
+}
+
+#billy_dashboard a {
+	text-decoration: none;
+}
+#billy_dashboard .dashicons-star-filled {
+	color: #ffb900;
+}
+#billy_dashboard table {
+	width: 100%;
+}
+#billy_dashboard table.widefat {
+	background-color: #f1f1f1;
+}
+#billy_dashboard table.widefat td:nth-child(even) {
+	font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+		"Courier New", monospace;
+}
+#billy_dashboard table.footer td {
+	vertical-align: bottom;
+}
+#billy_dashboard .logo {
+	width: 80px;
+	margin: 0 12px;
+}
+
+.notice-billy::before {
+	content: "";
+	background-image: url("../../img/logo.png");
+	background-size: 100% 100%;
+	display: block;
+	float: left;
+	width: 40px;
+	height: 21px;
+	margin: 7px 10px;
+}
+
+/* Dashboard menu */
+
+li[class*="billy"],
+li[id*="menu-posts-billy-"] {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+li[class*="billy"] .wp-menu-image::before,
+li[id*="menu-posts-billy-"] .wp-menu-image::before {
+	color: #fff !important;
+}
+li[class*="billy"] li a::before {
+	margin-right: 5px;
+	font-family: Dashicons;
+}
+li[class*="billy"] li a[href*="invoice"]::before {
+	content: "\f486";
+}
+li[class*="billy"] li a[href*="quote"]::before {
+	content: "\f524";
+}
+li[class*="billy"] li a[href*="accounting"]::before {
+	content: "\f331";
+}
+
+.code {
+	font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+		"Courier New", monospace;
+}
+.components-panel__body .ul {
+	background-color: #f1f1f1;
+	list-style: disc;
+	padding: 12px 12px 12px 20px;
+}
+
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+
+.align-self-center {
+	-ms-flex-item-align: center !important;
+	align-self: center !important;
+}
+
+.editor-styles-wrapper a.components-button {
+	text-decoration: none;
+}
+
+/* Header */
+
+body.block-editor-page[class*="post-type-billy-"]
+	.wp-block-post-content
+	> .wp-block.is-reusable,
+[data-type="billy-blocks/header"] {
+	border-top: 1px dashed;
+	border-bottom: 1px dashed;
+	margin: 15px auto;
+	max-width: 100%;
+}
+body.block-editor-page[class*="post-type-billy-"]
+	.wp-block-post-content
+	> .wp-block.is-reusable
+	> *,
+[data-type="billy-blocks/header"] > * {
+	padding: 15px 0;
+}
+
+.invoice-status,
+.quote-status {
+	background: transparent;
+}
+
+.metadata .label,
+.metadata .text {
+	display: inline-block;
+}
+.metadata .label {
+	font-weight: bold;
+}
+
+.date .label,
+.metadata .label,
+.date .text,
+.metadata .text {
+	font-size: smaller;
+	display: inline-block;
+}
+.date .label,
+.metadata .label {
+	font-weight: bold;
+	width: 40%;
+}
+
+.details {
+	margin-bottom: 90px;
+}
+.details [data-type="core/column"]:first-of-type {
+	border: 25px solid rgba(139, 139, 150, 0.1);
+	box-shadow: 0 10px 6px -6px #777;
+	border-radius: 12px;
+}
+.details [data-type="core/column"]:first-of-type .block-list-appender {
+	display: none !important;
+}
+
+.intro {
+	margin: 90px 0 !important;
+}
+
+/* Footer */
+
+.wp-block.information + .wp-block {
+	margin-top: 150px !important;
+}
+
+.wp-block-group.footer {
+	font-size: small;
+}
+
+/* Tables */
+
+[data-type$="-table"] .block-editor-inner-blocks {
+	margin-bottom: 80px !important;
+}
+[data-type$="-table"]
+	.block-editor-inner-blocks
+	> .block-editor-block-list__layout
+	.block-list-appender {
+	display: block !important;
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: -50px !important;
+}
+[data-type$="-table"]
+	.block-editor-inner-blocks
+	> .block-editor-block-list__layout
+	.block-editor-button-block-appender {
+	color: var(--wp-components-color-accent-inverted, #fff);
+	background-color: var(--wp-admin-theme-color);
+	box-shadow: 0 0 0 2px var(--wp-admin-theme-color, #3858e9);
+	width: 90%;
+	margin: 0 auto;
+	padding: 6px;
+}
+[data-type$="-table"]
+	.block-editor-inner-blocks
+	> .block-editor-block-list__layout
+	.block-editor-button-block-appender:hover {
+	background-color: var(--wp-admin-theme-color-darker-10);
+}
+[data-type$="-table"]
+	.block-editor-inner-blocks
+	> .block-editor-block-list__layout
+	.block-editor-button-block-appender:hover
+	svg {
+	fill: var(--wp-components-color-accent-inverted, #fff);
+}
+
+[data-type$="-table"] table label {
+	font-size: initial !important;
+}
+
+[data-type$="-tablerow"] table {
+	width: 100%;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	margin-bottom: -1px;
+}
+[data-type$="-tablerow"] table [data-type="core/block"] {
+	border: 1px dashed;
+	margin-top: -1px;
+	padding-right: 12px;
+	padding-left: 12px;
+}
+
+[data-type$="-tablerow"] table tr th,
+[data-type$="-tablerow"] table tr td {
+	vertical-align: top;
+}
+
+[data-type$="accounting-tablerow"] {
+	border-left: 4px solid transparent;
+}
+[data-type$="accounting-tablerow"]:nth-of-type(even) {
+	border-left-color: #007cba;
+}
+
+table.totals {
+	width: 100%;
+	font-size: larger;
+	font-weight: bold;
+	margin-top: 20px;
+}
+table.totals tr th {
+	text-align: right;
+}
+table.totals tr th,
+table.totals tr td {
+	padding: 3px 10px;
+}
+
+body.block-editor-page[class*="post-type-billy-"] table th,
+body.block-editor-page[class*="post-type-billy-"] table td {
+	padding: 10px 15px !important;
+}
+body.block-editor-page[class*="post-type-billy-"] table th {
+	font-weight: bold;
+}
+
+table .index {
+	font-size: 2rem;
+}
+table .date {
+	min-width: 110px;
+}
+table .date sub {
+	font-weight: bold;
+}
+
+[data-type$="-table"] table label {
+	white-space: nowrap;
+	min-width: 80px;
+}
+[data-type$="-table"] table .amount label {
+	color: #073984;
+}
+[data-type$="-table"] table .amount input {
+	background-color: #cfe2ff;
+}
+
+[data-type$="-table"] table .amount.earning label {
+	color: #155724;
+}
+[data-type$="-table"] table .amount.earning input {
+	background-color: #d4edda;
+}
+
+[data-type$="-table"] table .amount.expense label {
+	color: #721c24;
+}
+[data-type$="-table"] table .amount.expense input {
+	background-color: #f8d7da;
+}
